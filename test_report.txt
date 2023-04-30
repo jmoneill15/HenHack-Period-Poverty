@@ -86,7 +86,7 @@
         at div
         at /home/runner/work/HenHack-Period-Poverty/HenHack-Period-Poverty/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
         at ChakraComponent (/home/runner/work/HenHack-Period-Poverty/HenHack-Period-Poverty/node_modules/@chakra-ui/system/dist/index.js:228:71)
-        at Locations (/home/runner/work/HenHack-Period-Poverty/HenHack-Period-Poverty/src/components/Locations.tsx:28:43)
+        at Locations (/home/runner/work/HenHack-Period-Poverty/HenHack-Period-Poverty/src/components/Locations.tsx:29:43)
         at div
         at App
 
@@ -120,7 +120,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (416 ms)
+  ✕ renders learn react link (522 ms)
 
   ● renders learn react link
 
@@ -286,15 +286,15 @@ FAIL src/App.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |      50 |        0 |   66.66 |   47.05 |                   
+All files            |      56 |        0 |   57.14 |   54.16 |                   
  src                 |   13.33 |        0 |   33.33 |   13.33 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   products.tsx       |     100 |      100 |     100 |     100 |                   
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   76.19 |      100 |      75 |   73.68 |                   
+ src/components      |   74.28 |      100 |   61.11 |   72.72 |                   
   Location.tsx       |       0 |        0 |       0 |       0 |                   
-  Locations.tsx      |    87.5 |      100 |      80 |   85.71 | 24                
+  Locations.tsx      |   77.27 |      100 |   54.54 |   76.19 | 25,36-46          
   Poverty.tsx        |     100 |      100 |     100 |     100 |                   
   Product.tsx        |       0 |        0 |       0 |       0 |                   
   Products.tsx       |   63.63 |      100 |   66.66 |      60 | 18,26-28          
@@ -303,5 +303,5 @@ All files            |      50 |        0 |   66.66 |   47.05 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.583 s
+Time:        3.426 s
 Ran all test suites.
