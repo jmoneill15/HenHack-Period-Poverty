@@ -9,6 +9,26 @@ import { useState } from "react";
 import { HTMLInputTypeAttribute} from "react";
 
 //add imports to add another location
+/*
+<Stack spacing={1}>
+                <InputGroup p="7vh">
+                    <InputLeftAddon>Building</InputLeftAddon>
+                    <Input onChange={buildingChange} variant="filled" placeholder="Insert Building"></Input>
+                </InputGroup>
+                <InputGroup p="7vh">
+                    <InputLeftAddon>Location</InputLeftAddon>
+                    <Input onChange={locationChange} variant="filled" placeholder="Insert Location"></Input>
+                </InputGroup>
+                <InputGroup p="7vh">
+                    <InputLeftAddon>Address</InputLeftAddon>
+                    <Input onChange={addressChange} variant="filled" placeholder="Insert Address"></Input>
+                </InputGroup>
+                <InputGroup p="7vh">
+                    <InputLeftAddon>Operating Hours</InputLeftAddon>
+                    <Input onChange={hoursChange} variant="filled" placeholder="Insert Operating Hours "></Input>
+                </InputGroup>
+            </Stack>
+*/
 
 interface LocationProps {
     location: Location[];
@@ -67,7 +87,7 @@ export function Locations(): JSX.Element {
     //embed a map dumbfuck
     return(
         <Box>
-            <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
+            <Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
             <Accordion p="8vh">
                 {newList.map((location)=>(
                     <AccordionItem key={location.building}>
@@ -88,20 +108,18 @@ export function Locations(): JSX.Element {
                 ))}
             </Accordion> 
             <Spacer></Spacer>
+            <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Location:</Heading>
             <Stack spacing={1}>
                 <InputGroup p="7vh">
                     <InputLeftAddon>Building</InputLeftAddon>
                     <Input onChange={buildingChange} variant="filled" placeholder="Insert Building"></Input>
-                </InputGroup>
-                <InputGroup p="7vh">
+                    <Spacer></Spacer>
                     <InputLeftAddon>Location</InputLeftAddon>
                     <Input onChange={locationChange} variant="filled" placeholder="Insert Location"></Input>
-                </InputGroup>
-                <InputGroup p="7vh">
+
                     <InputLeftAddon>Address</InputLeftAddon>
                     <Input onChange={addressChange} variant="filled" placeholder="Insert Address"></Input>
-                </InputGroup>
-                <InputGroup p="7vh">
+
                     <InputLeftAddon>Operating Hours</InputLeftAddon>
                     <Input onChange={hoursChange} variant="filled" placeholder="Insert Operating Hours "></Input>
                 </InputGroup>

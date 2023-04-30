@@ -4,6 +4,7 @@ import { Products } from "./components/Products";
 import { Box, Spacer } from "@chakra-ui/layout";
 import { Poverty } from "./components/Poverty";
 import { Locations } from "./components/Locations";
+import { Heading } from "@chakra-ui/react";
 
 function App(): JSX.Element {
 
@@ -13,9 +14,9 @@ function App(): JSX.Element {
             </header>
             <Spacer></Spacer>
             <Poverty></Poverty>
-            <Spacer></Spacer>
+            <Heading h="5vh"></Heading>
             <Products></Products>
-            <Spacer></Spacer>
+            <Heading h="5vh"></Heading>
             <Locations></Locations>
         </div>
     );

@@ -1,24 +1,16 @@
 import React from "react";
 import { Text, Box, Heading, Spacer, AspectRatio } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
-import { Center } from "@chakra-ui/layout";
-import { Card, CardBody, CardFooter } from "@chakra-ui/card";
+import { Container} from "@chakra-ui/react";
+import { Link} from "@chakra-ui/react";
 import { Popover,PopoverTrigger, PopoverArrow, PopoverBody, PopoverContent, PopoverCloseButton, PopoverHeader } from "@chakra-ui/popover";
-
-//make a popover for the different communities affected
-/*
-                <AspectRatio maxW="300px" ratio={1}>
-                    <iframe title="How Do Homeless Women Cope With Their Periods?" src="https://www.cbsnews.com/video/period-half-the-population-has-one-but-no-one-talks-about-it/" allowFullScreen>
-                    </iframe>    
-
-                </AspectRatio>
-*/
 
 export function Poverty(): JSX.Element {
 
     return(
         <Box>
-            <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
+            <Heading h="3vh"></Heading>
+            <Heading h="1vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
                 <Text size="sm" fontSize="Georgia">What is Period Poverty?</Text>
             </Heading>
             <Text p="8vh" size="md" style={{"fontFamily": "'Georgia', sans-serif"}} noOfLines={7}>
@@ -83,16 +75,30 @@ export function Poverty(): JSX.Element {
                     </PopoverBody>
                 </PopoverContent>
             </Popover>
+            <Heading h="10vh"></Heading>
             <Spacer></Spacer>
-            <Card w="40vh" h="20vh" align="flex">
-                <div className = "video-container">
-                    <video controls>
-                        <source src = "https://www.cbsnews.com/video/period-half-the-population-has-one-but-no-one-talks-about-it/">
-                        </source>
-                    </video>
-
-                </div>
-            </Card>
+            <Container maxW="4100vh" >
+                <Heading h="5vh" size="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Learn More:</Heading>
+                <Link color="red.700" style={{"fontFamily": "'Georgia', sans-serif"}} href="https://opendocs.ids.ac.uk/opendocs/bitstream/handle/20.500.12413/14348/536_Period_Poverty_Impact_on_the_Economic_Empowerment_of_Women.pdf?sequence=3&isAllowed=y " isExternal>
+                Period poverty impact on the economic empowerment of women
+                </Link>
+                <Spacer></Spacer>
+                <Link color="red.700" style={{"fontFamily": "'Georgia', sans-serif"}} href="https://www.washingtonpost.com/opinions/2022/03/25/prison-period-danger-health-risks-sexual-abuse/" isExternal>
+                    In prison, having your period can put your life in danger 
+                </Link>
+                <Spacer></Spacer>
+                <Link color="red.700" style={{"fontFamily": "'Georgia', sans-serif"}} href="https://www.bustle.com/articles/190092-this-is-how-homeless-women-cope-with-their-periods" isExternal>
+                    How Do Homeless Women Cope With Their Periods?
+                </Link>
+                <Spacer></Spacer>
+                <Link color="red.700" style={{"fontFamily": "'Georgia', sans-serif"}} href="https://www.unicef.org/media/91346/file/UNICEF-Guide-menstrual-hygiene-materials-2019.pdf" isExternal>
+                    Guide to Menstrual Hygiene Materials
+                </Link>
+                <Spacer></Spacer>
+                <Link color="red.700" style={{"fontFamily": "'Georgia', sans-serif"}} href="https://sites.uab.edu/humanrights/2019/11/11/examining-period-poverty/" isExternal>
+                    Examining Period Poverty
+                </Link>
+            </Container>
         </Box>
     );
 }
