@@ -120,7 +120,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (522 ms)
+  ✕ renders learn react link (570 ms)
 
   ● renders learn react link
 
@@ -170,7 +170,7 @@ FAIL src/App.test.tsx
               [33mid[39m=[32m"popover-trigger-:r1:"[39m
               [33mtype[39m=[32m"button"[39m
             [36m>[39m
-              [0mTrigger[0m
+              [0mLow-Income[0m
             [36m</button>[39m
             [36m<div[39m
               [33mclass[39m=[32m"chakra-popover__popper css-0"[39m
@@ -215,7 +215,7 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"chakra-popover__body css-0"[39m
                   [33mid[39m=[32m"popover-body-:r1:"[39m
                 [36m>[39m
-                  [0mAre you sure you want to have that milkshake?[0m
+                  [0mMany low-income countries not only lack period product supplies but tend to have issues with sanitation and hygiene facilities. With these situations it has a poor impact on mental health as well as puts them in dangerous situations as many have to seek dangerous means to recieve products.[0m
                 [36m</div>[39m
               [36m</section>[39m
             [36m</div>[39m
@@ -260,10 +260,7 @@ FAIL src/App.test.tsx
                     [33maria-hidden[39m=[32m"true"[39m
                     [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
                     [33mfocusable[39m=[32m"false"[39m
-                    [33mviewBox[39m=[32m"0 0 24 24"[39m
-                  [36m>[39m
-                    [36m<path[39m
-                      [33md[39m=[32m"M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0...
+                    [33mviewBox[39m=[...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -303,5 +300,5 @@ All files            |      56 |        0 |   57.14 |   54.16 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.426 s
+Time:        3.61 s
 Ran all test suites.
