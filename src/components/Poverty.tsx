@@ -27,7 +27,6 @@ export function Poverty(): JSX.Element {
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
-                    <PopoverHeader>Confirmation!</PopoverHeader>
                     <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
                 </PopoverContent>
             </Popover>
@@ -39,7 +38,6 @@ export function Poverty(): JSX.Element {
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
-                    <PopoverHeader>Confirmation!</PopoverHeader>
                     <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
                 </PopoverContent>
             </Popover>
@@ -51,8 +49,10 @@ export function Poverty(): JSX.Element {
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
-                    <PopoverHeader>Confirmation!</PopoverHeader>
-                    <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                    <PopoverBody>
+                        Approximately 230,000 women are incarcerated, there are thrity-eight states without mandatory laws to provide menstrual products. 
+                        If a state does have a mandatory law many do not provided the right amount of products, with this many women are forced to other methods to make means end.
+                    </PopoverBody>
                 </PopoverContent>
             </Popover>
 
