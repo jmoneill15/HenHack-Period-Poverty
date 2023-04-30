@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HenHack-Period-Poverty/static/css/main.20c11d32.css",
+    "main.js": "/HenHack-Period-Poverty/static/js/main.360b814a.js",
+    "static/js/787.a9bbcd41.chunk.js": "/HenHack-Period-Poverty/static/js/787.a9bbcd41.chunk.js",
+    "index.html": "/HenHack-Period-Poverty/index.html",
+    "main.20c11d32.css.map": "/HenHack-Period-Poverty/static/css/main.20c11d32.css.map",
+    "main.360b814a.js.map": "/HenHack-Period-Poverty/static/js/main.360b814a.js.map",
+    "787.a9bbcd41.chunk.js.map": "/HenHack-Period-Poverty/static/js/787.a9bbcd41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20c11d32.css",
+    "static/js/main.360b814a.js"
+  ]
+}
