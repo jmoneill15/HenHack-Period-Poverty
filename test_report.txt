@@ -120,7 +120,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (421 ms)
+  ✕ renders learn react link (416 ms)
 
   ● renders learn react link
 
@@ -178,7 +178,6 @@ FAIL src/App.test.tsx
             [36m>[39m
               [36m<section[39m
                 [33maria-describedby[39m=[32m"popover-body-:r1:"[39m
-                [33maria-labelledby[39m=[32m"popover-header-:r1:"[39m
                 [33mclass[39m=[32m"chakra-popover__content css-1ab1jlb"[39m
                 [33mid[39m=[32m"popover-content-:r1:"[39m
                 [33mrole[39m=[32m"dialog"[39m
@@ -212,12 +211,6 @@ FAIL src/App.test.tsx
                     [36m/>[39m
                   [36m</svg>[39m
                 [36m</button>[39m
-                [36m<header[39m
-                  [33mclass[39m=[32m"chakra-popover__header css-0"[39m
-                  [33mid[39m=[32m"popover-header-:r1:"[39m
-                [36m>[39m
-                  [0mConfirmation![0m
-                [36m</header>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"chakra-popover__body css-0"[39m
                   [33mid[39m=[32m"popover-body-:r1:"[39m
@@ -242,7 +235,6 @@ FAIL src/App.test.tsx
             [36m>[39m
               [36m<section[39m
                 [33maria-describedby[39m=[32m"popover-body-:r3:"[39m
-                [33maria-labelledby[39m=[32m"popover-header-:r3:"[39m
                 [33mclass[39m=[32m"chakra-popover__content css-1ab1jlb"[39m
                 [33mid[39m=[32m"popover-content-:r3:"[39m
                 [33mrole[39m=[32m"dialog"[39m
@@ -266,7 +258,12 @@ FAIL src/App.test.tsx
                 [36m>[39m
                   [36m<svg[39m
                     [33maria-hidden[39m=[32m"true"[39m
-                 ...
+                    [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
+                    [33mfocusable[39m=[32m"false"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -306,5 +303,5 @@ All files            |      50 |        0 |   66.66 |   47.05 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.633 s
+Time:        2.583 s
 Ran all test suites.
