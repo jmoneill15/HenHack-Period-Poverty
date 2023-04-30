@@ -2,12 +2,20 @@ import React from "react";
 import { Text, Box, Heading, Spacer, AspectRatio } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 import { Center } from "@chakra-ui/layout";
-import { Card } from "@chakra-ui/card";
+import { Card, CardBody, CardFooter } from "@chakra-ui/card";
 import { Popover,PopoverTrigger, PopoverArrow, PopoverBody, PopoverContent, PopoverCloseButton, PopoverHeader } from "@chakra-ui/popover";
 
 //make a popover for the different communities affected
+/*
+                <AspectRatio maxW="300px" ratio={1}>
+                    <iframe title="How Do Homeless Women Cope With Their Periods?" src="https://www.cbsnews.com/video/period-half-the-population-has-one-but-no-one-talks-about-it/" allowFullScreen>
+                    </iframe>    
+
+                </AspectRatio>
+*/
 
 export function Poverty(): JSX.Element {
+
     return(
         <Box>
             <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
@@ -22,12 +30,15 @@ export function Poverty(): JSX.Element {
             <Spacer></Spacer>
             <Popover>
                 <PopoverTrigger>
-                    <Button mr={5}>Trigger</Button>
+                    <Button mr={5}>Low-Income</Button>
                 </PopoverTrigger>
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
-                    <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                    <PopoverBody>
+                        Many low-income countries not only lack period product supplies but tend to have issues with sanitation and hygiene facilities. 
+                        With these situations it has a poor impact on mental health as well as puts them in dangerous situations as many have to seek dangerous means to recieve products.
+                    </PopoverBody>
                 </PopoverContent>
             </Popover>
         
@@ -38,13 +49,16 @@ export function Poverty(): JSX.Element {
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
-                    <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                    <PopoverBody>
+                        In this country many people face homelessness, and with a montly period the choice between products or eating for the day is a challenging. 
+                        The cost of products are very high and they add up, and a single supply does not last for very long based on a persons flow. 
+                    </PopoverBody>
                 </PopoverContent>
             </Popover>
 
             <Popover>
                 <PopoverTrigger>
-                    <Button mr={5}>Incarcerated</Button>
+                    <Button mr={5}>Incarceration</Button>
                 </PopoverTrigger>
                 <PopoverContent>
                     <PopoverArrow />
@@ -55,17 +69,30 @@ export function Poverty(): JSX.Element {
                     </PopoverBody>
                 </PopoverContent>
             </Popover>
-
-
-
-
+            <Popover>
+                <PopoverTrigger>
+                    <Button mr={5}>Health Issues</Button>
+                </PopoverTrigger>
+                <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverCloseButton />
+                    <PopoverBody>
+                        In nearly all communities that this issues impacts it has a direct impact on physical health.
+                        Due to lack of products many make their own products out of other materials like socks, newspaper, bags, mud, and other harmful materials. 
+                        The anxiety and stress that people face on theri period in these tough situations deteriorates their physical health and leaves many open to infects or other diseases. 
+                    </PopoverBody>
+                </PopoverContent>
+            </Popover>
             <Spacer></Spacer>
-            <AspectRatio maxW="300px" ratio={1}>
-                <iframe title="How Do Homeless Women Cope With Their Periods?" src="https://youtu.be/ABch4VYOJZ0" allowFullScreen>
-                </iframe>
-            </AspectRatio>
-        </Box>
-    
-    );
+            <Card w="40vh" h="20vh" align="flex">
+                <div className = "video-container">
+                    <video controls>
+                        <source src = "https://www.cbsnews.com/video/period-half-the-population-has-one-but-no-one-talks-about-it/">
+                        </source>
+                    </video>
 
+                </div>
+            </Card>
+        </Box>
+    );
 }

@@ -13,7 +13,9 @@ function App(): JSX.Element {
             </header>
             <Spacer></Spacer>
             <Poverty></Poverty>
+            <Spacer></Spacer>
             <Products></Products>
+            <Spacer></Spacer>
             <Locations></Locations>
         </div>
     );
