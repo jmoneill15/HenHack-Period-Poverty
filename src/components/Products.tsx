@@ -34,7 +34,7 @@ export function Products(): JSX.Element {
             <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
                 <Text size="md">Hygiene Products</Text>
             </Heading>
-            <SimpleGrid w="200vh" h="80vh" p="4vh"  spacing = {2} templateColumns={{base: "repeat(3, 1fr)"}}>
+            <SimpleGrid w="200%" h="80%" p="4vh"  spacing = {2} templateColumns={{base: "repeat(3, 1fr)"}}>
                 {productList.map((product)=>(
                     <Card backgroundColor="red.600" maxW="md" direction={{base: "row", sm:"column"}} style={{"fontFamily": "'Georgia', sans-serif"}} overflow="hidden" variant="elevated" key={product.name}>
                         <CardHeader key={product.name} >
