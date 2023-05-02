@@ -29,7 +29,6 @@ export function Products(): JSX.Element {
     }
 
     return(
-    // <div>movies</div>
         <Box>
             <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
                 <Text size="md">Hygiene Products</Text>
